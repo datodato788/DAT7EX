@@ -4,6 +4,23 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   /* overflow: hidden; */
 }
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.text {
+  position: relative;
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 50px;
+}
+a{
+  cursor: none;
+}
 html{
   overflow: hidden;
 }
@@ -87,6 +104,9 @@ main {
   display: inline-block;
   margin: 40px 0px 0px 0px;
 }
+.dc{
+  color: black;
+}
 .NAME {
   text-align: center;
   color: rgb(0, 255, 0);
@@ -108,6 +128,7 @@ main {
   align-items: center;
   gap: 20px;
   padding: 20px;
+  cursor: none;
 }
 
 .icon {
@@ -203,6 +224,7 @@ main {
   .social {
     gap: 20px;
     padding: 20px;
+    cursor: none;
   }
 
   .icon {
@@ -256,6 +278,7 @@ main {
   .social {
     gap: 20px;
     padding: 20px;
+    cursor: none;
   }
 
   .icon {
