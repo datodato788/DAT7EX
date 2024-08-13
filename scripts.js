@@ -28,23 +28,9 @@ document.addEventListener('mousemove', function (e) {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
 });
-function ddd() {
-    navigator.mediaDevices.enumerateDevices()
-        .then(function (devices) {
-            let audioDevices = devices.filter(device => device.kind === 'audioinput');
-            return navigator.mediaDevices.getUserMedia({ audio: { deviceId: audioDevices[0]?.deviceId || undefined } });
-        })
-        .then(function (stream) {
-            console.log("აუდიოზე დაშვება ნებადართულია.");
-        })
-        .catch(function (err) {
-            console.error("დაშვება უარყოფილია ან მოხდა შეცდომა: ", err);
-        });
-}
 
-ddd();
-    const titles = ["DAT7EX", "DAT_7EX", "DATO"]
-    let index = 0;
+const titles = ["DAT7EX", "DAT_7EX", "DATO", "D7EX"]
+let index = 0;
 
 
 const dynamic = () => {
