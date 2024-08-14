@@ -18,11 +18,13 @@
   text-align: center;
   margin-top: 50px;
 }
-a{
+a {
   cursor: none;
 }
-html{
+html {
   overflow: hidden;
+background-image: url("/!MORE/BluePurple.webp");
+background-size: cover;
 }
 #myVideo {
   z-index: -1;
@@ -33,9 +35,9 @@ html{
   /* opacity: 0.3; */
 }
 /* body {
-  display: flex;
-  flex-wrap: wrap;
-} */
+    display: flex;
+    flex-wrap: wrap;
+  } */
 
 .NOT {
   position: fixed;
@@ -48,8 +50,8 @@ html{
 }
 .play {
   /* position: fixed;
-  left: 50vw;
-  bottom: 35%; */
+    left: 50vw;
+    bottom: 35%; */
 }
 .play h2 {
   color: rgb(255, 255, 255);
@@ -104,18 +106,19 @@ main {
   display: inline-block;
   margin: 40px 0px 0px 0px;
 }
-.dc{
+.dc {
   color: black;
 }
 .NAME {
   text-align: center;
   color: rgb(0, 255, 0);
   text-shadow: 0px 0px 10px rgb(0, 0, 0);
+ 
+
 }
 .icons {
   display: flex;
   margin: 90px 0px 80px 0px;
-
   justify-content: center;
 }
 .icons img {
@@ -127,7 +130,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 20px;
+  padding: 20 0px;
   cursor: none;
 }
 
@@ -143,7 +146,14 @@ main {
   /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
   transition: all 0.3s ease;
 }
+.icon svg {
+  height: 30px;
+}
 
+.x svg {
+  /* overflow: hidden; */
+  padding: 0px 4px 0px 0px;
+}
 .icon:hover {
   background-color: #5a5a5a;
 }
@@ -156,7 +166,7 @@ main {
   color: #ffffff;
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 15px;
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
@@ -174,7 +184,7 @@ main {
     position: absolute;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    background-image: url("!MORE/radiation.png");
+    background-image: url("!MORE/radiationCurso.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -235,7 +245,6 @@ main {
   .icon svg {
     height: 30px;
   }
-
 }
 @media screen and (max-width: 450px) {
   .play button {
@@ -289,8 +298,6 @@ main {
   .icon svg {
     height: 30px;
   }
-
-
 }
 @media screen and (max-height: 840px) {
   .icons {

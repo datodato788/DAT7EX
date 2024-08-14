@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="dynamicTitle">DAT7EX</title>
-    <link
-      rel="shortcut icon"
-      href="!MORE/android-chrome-192x192.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="!MORE/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- ვიდეო ანუ ბექრაუნდსი  -->
     <div class="custom-cursor"></div>
     <video autoplay muted loop id="myVideo">
-      <source src="!MORE/video.mp4" type="video/mp4" />
+      <source src="!MORE/BackGroundVideo.mp4" type="video/mp4" />
     </video>
+    <!-- --------- -->
+
+    <!-- დავამატე ღილაკი რომლითაც ვაძლევ უფებას ჩაირთოს სიმღეა ესე როვთქვათ  start ღლიაკია -->
     <div id="NOT" class="NOT">
       <div id="play" class="play">
         <div class="playM">
@@ -26,19 +26,29 @@
         </div>
       </div>
     </div>
-    <!-- ///////////////////// -->
+    <!-- --------- -->
+
+    <!-- MAIN - ანუ მთავარი შინაარსი უკვე ქარდი რა -->
     <div class="main">
       <main>
         <div class="avatar">
-          <div class="pfp" id="pfp"><img src="!MORE/gervonta.jpg" /></div>
+          <div class="pfp" id="pfp"><img src="!MORE/gervontaPfp.jpg" /></div>
         </div>
         <br />
-        <div class="NAME"><h1>DAT_7EX</h1></div>
-        <div class="icons">
-          <div class="html"><img src="!MORE/html-5.png" alt="" /></div>
-          <div class="css"><img src="!MORE/css-3.png" alt="" /></div>
-          <div class="js"><img src="!MORE/js.png" alt="" /></div>
+
+        <!-- სახელი დაემატება -->
+        <div id="NAME" class="NAME"><h1 id="names"></h1></div>
+        <!-- --------- -->
+
+        <!-- skil აიქონები -->
+        <div id="icons" class="icons">
+          <div class="html"><img src="!MORE/HTML.png" alt="" /></div>
+          <div class="css"><img src="!MORE/CSS.png" alt="" /></div>
+          <div class="js"><img src="!MORE/JS.png" alt="" /></div>
         </div>
+        <!-- --------- -->
+
+        <!-- სოციალური გვერდების აიქონები  -->
         <div class="social">
           <a target="_blank" href="https://www.facebook.com/Dato07">
             <div class="icon fb" data-label="facebook">
@@ -83,8 +93,10 @@
               </svg></div
           ></a>
         </div>
+        <!-- --------- -->
       </main>
     </div>
+    <!-- --------- -->
 
     <script defer src="scripts.js"></script>
   </body>
