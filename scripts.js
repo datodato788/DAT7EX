@@ -52,6 +52,8 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
                 document.getElementById("myVideo").style.display = "none"
                 document.getElementById("icons").style.display = "none";
                 document.getElementById("NAME").style.margin = "0px 0px 70px 0px"
+                document.getElementById("body").style.backgroundImage = 'url("/!MORE/BluePurple.webp")'
+
 
 
             }
@@ -59,6 +61,8 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
                 document.getElementById("icons").style.display = "none";
                 document.getElementById("NAME").style.margin = "0px 0px 70px 0px"
                 audioo = "no"
+                document.getElementById("body").style.backgroundImage = 'url("/!MORE/BluePurple.webp")'
+
 
             }
             else if (name.slice(-2) == ".,") {
@@ -71,6 +75,7 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
                 document.getElementById("icons").style.display = "none";
                 document.getElementById("NAME").style.margin = "0px 0px 70px 0px"
                 audioo = "no"
+                document.getElementById("body").style.backgroundImage = 'url("/!MORE/BluePurple.webp")'
 
             }
             // --
@@ -85,6 +90,11 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
                 audioo = "no"
 
             }
+            // else{
+            //     document.getElementById("body").style.backgroundImage = 'url("/!MORE/BluePurple.webp")'
+            //     document.getElementById("myVideo").style.display = "none"
+
+            // }
         }
 
 
