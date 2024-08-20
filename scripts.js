@@ -82,7 +82,7 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
             else if (name.slice(-1) == "-") {
                 document.getElementById("icons").style.display = "none";
                 document.getElementById("NAME").style.margin = "0px 0px 70px 0px"
-              
+
             } else if (name.slice(-1) == ".") {
                 document.getElementById("myVideo").style.display = "none"
             }
@@ -178,3 +178,6 @@ function accept() {
 }
 
 
+function load() {
+    const load = document.getElementById("load").style.display = "none"
+}
