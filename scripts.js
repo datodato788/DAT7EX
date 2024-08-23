@@ -27,8 +27,8 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
         // სახელს აჭირს ანუ ასუფთავებს
 
         const nameChecker = (name) => {
-            if (name.slice(-1) == "-" || name.slice(-1) == ".") {
-                if (name.slice(-2) == "-." || name.slice(-2) == ".-") {
+            if (name.slice(-1) == "-" || name.slice(-1) == "." || name.slice(-1) == ",") {
+                if (name.slice(-2) == "-." || name.slice(-2) == ".-" || name.slice(-2) == "-,") {
                     document.getElementById("names").innerHTML = name.slice(0, -2)
 
                 }
@@ -52,7 +52,7 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
                 document.getElementById("myVideo").style.display = "none"
                 document.getElementById("icons").style.display = "none";
                 document.getElementById("NAME").style.margin = "0px 0px 70px 0px"
-                document.getElementById("body").style.backgroundImage = 'url("/!MORE/BluePurple.webp")'
+                document.getElementById("body").style.backgroundImage = 'url("/!MORE/backg.jpg")'
 
 
 
@@ -61,7 +61,6 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
                 document.getElementById("icons").style.display = "none";
                 document.getElementById("NAME").style.margin = "0px 0px 70px 0px"
                 audioo = "no"
-                document.getElementById("body").style.backgroundImage = 'url("/!MORE/BluePurple.webp")'
 
 
             }
@@ -75,13 +74,15 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
                 document.getElementById("icons").style.display = "none";
                 document.getElementById("NAME").style.margin = "0px 0px 70px 0px"
                 audioo = "no"
-                document.getElementById("body").style.backgroundImage = 'url("/!MORE/BluePurple.webp")'
+                document.getElementById("body").style.backgroundImage = 'url("/!MORE/backg.jpg")'
 
             }
             // --
             else if (name.slice(-1) == "-") {
                 document.getElementById("icons").style.display = "none";
                 document.getElementById("NAME").style.margin = "0px 0px 70px 0px"
+
+
 
             } else if (name.slice(-1) == ".") {
                 document.getElementById("myVideo").style.display = "none"
@@ -90,14 +91,8 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
                 audioo = "no"
 
             }
-            // else{
-            //     document.getElementById("body").style.backgroundImage = 'url("/!MORE/BluePurple.webp")'
-            //     document.getElementById("myVideo").style.display = "none"
-
-            // }
+         
         }
-
-
 
         // <!-- --------- -->
         // თუ არის ონლაინზე
@@ -143,8 +138,6 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
         }
 
 
-        // nameChecker(user.members[0].username)
-        // nameSimboloChecker(user.members[0].username)
         // სიმღერის ლინკი ანუ რომელი უნდა ჩაირთოს 
 
 
@@ -169,11 +162,11 @@ function accept() {
 
         }
         d()
-        const play = document.getElementById("play")
-        play.classList.toggle("accepted")
+        const enter = document.getElementById("enter")
+        enter.style.display = "none"
     } else if (audioo == "no") {
-        const play = document.getElementById("play")
-        play.classList.toggle("accepted")
+       const enter = document.getElementById("enter")
+        enter.style.display = "none"
     }
 }
 
