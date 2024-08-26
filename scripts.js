@@ -177,17 +177,3 @@ function load() {
 }
 
 
-function mute() {
-    const mute = document.getElementById("mute")
-    if (audio.paused) {
-        audio.play()
-        mute.src = "!MORE/voice.png"
-
-    } else {
-        audio.pause()
-        mute.src = "!MORE/mute.png"
-
-
-
-    }
-}
