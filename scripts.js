@@ -24,7 +24,7 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
     .then((e) => { return e.json() })
     .then((user) => {
 
-        // სახელს აჭირს ანუ ასუფთავებს
+        // სახელს აჭრის ანუ ასუფთავებს
 
         const nameChecker = (name) => {
             if (name.slice(-1) == "-" || name.slice(-1) == "." || name.slice(-1) == ",") {
@@ -91,7 +91,7 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
                 audioo = "no"
 
             }
-         
+
         }
 
         // <!-- --------- -->
@@ -143,11 +143,11 @@ fetch("https://discord.com/api/guilds/1273294291518619749/widget.json")
 
         // <!-- --------- -->
     })
+const audio = new Audio()
 
 function accept() {
 
     if (audioo == "yes") {
-        const audio = new Audio()
 
         const d = () => {
             if (!audio.paused) {
@@ -155,6 +155,7 @@ function accept() {
             }
             else {
                 audio.src = "!more/sound.mp3"
+
 
                 audio.play()
 
@@ -165,7 +166,7 @@ function accept() {
         const enter = document.getElementById("enter")
         enter.style.display = "none"
     } else if (audioo == "no") {
-       const enter = document.getElementById("enter")
+        const enter = document.getElementById("enter")
         enter.style.display = "none"
     }
 }
@@ -173,4 +174,20 @@ function accept() {
 
 function load() {
     const load = document.getElementById("load").style.display = "none"
+}
+
+
+function mute() {
+    const mute = document.getElementById("mute")
+    if (audio.paused) {
+        audio.play()
+        mute.src = "!MORE/voice.png"
+
+    } else {
+        audio.pause()
+        mute.src = "!MORE/mute.png"
+
+
+
+    }
 }
